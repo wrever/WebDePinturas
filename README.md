@@ -1,7 +1,7 @@
-# Astro Starter Kit
+# Astro Starter Kit For Paint Seller Website
 
 ```sh
-npm create astro@latest 
+git clone https://github.com/wrever/WebDePinturas.git
 ```
 
 
