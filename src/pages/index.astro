@@ -1,0 +1,92 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PintaTuHogar - Tu Solución en Pintura</title>
+    <link rel="stylesheet" href="../src/styles.css" />
+  </head>
+  <body>
+    <Navbar />
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <h1>¡Transforma tus espacios con PintaTuHogar!</h1>
+      <p>
+        Colores vibrantes, acabados perfectos y calidad duradera. Renueva tu hogar con nuestras pinturas de primera calidad.
+      </p>
+      <a href="/contacto" class="cta-button">¡Contáctanos ahora!</a>
+    </header>
+
+    <!-- Cuenta Regresiva -->
+    <section class="countdown">
+      <h2>Oferta Exclusiva Finaliza En:</h2>
+      <div id="countdown-timer">
+        <div class="time-box">
+          <span id="days">00</span>
+          <small>Días</small>
+        </div>
+        <div class="time-box">
+          <span id="hours">00</span>
+          <small>Horas</small>
+        </div>
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <small>Minutos</small>
+        </div>
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <small>Segundos</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about">
+      <h2>¿Por qué elegir PintaTuHogar?</h2>
+      <p>
+        Nuestros productos están diseñados para ofrecer soluciones prácticas y estéticas a tus necesidades de pintura. ¡Elige calidad!
+      </p>
+      <ul class="benefits-list">
+        <li>
+          <img src="/src/images/coverage.svg" alt="Excelente cobertura" />
+          <p>Excelente cobertura</p>
+        </li>
+        <li>
+          <img src="/src/images/easy-application.svg" alt="Fácil aplicación" />
+          <p>Fácil aplicación</p>
+        </li>
+        <li>
+          <img src="/src/images/durable.svg" alt="Colores duraderos" />
+          <p>Colores resistentes</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Slider de Imágenes -->
+    <section class="slider">
+      <h2>Inspírate con nuestros proyectos</h2>
+      <div class="slider-container">
+        <div class="slider-item">
+          <img src="src/images/pin.webp" alt="Habitación decorada con pintura blanca" />
+          <p>Transforma tus interiores con colores frescos y modernos.</p>
+        </div>
+        <div class="slider-item">
+          <img src="src/images/van.webp" alt="Sala de estar con pintura vibrante" />
+          <p>Resalta la belleza de tus espacios con tonos vibrantes.</p>
+        </div>
+        <div class="slider-item">
+          <img src="src/images/pinn.webp" alt="Pared exterior pintada" />
+          <p>Protege tus exteriores con pintura de alta durabilidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="../src/scripts/countdown.js" defer></script>
+    <Footer />
+  </body>
+</html>
