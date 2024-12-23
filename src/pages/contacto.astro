@@ -1,0 +1,47 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - PintaTuHogar</title>
+    <link rel="stylesheet" href="../src/styles.css" />
+  </head>
+  <body>
+    <Navbar />
+    <main class="contact-page">
+      <h1>Contáctanos</h1>
+      <p>¿Tienes alguna consulta o necesitas más información? ¡Escríbenos!</p>
+
+      <section class="contact-info">
+        <h2>Información de contacto</h2>
+        <ul>
+          <li><strong>Teléfono:</strong> +34 600 123 456</li>
+          <li><strong>Correo electrónico:</strong> contacto@pintatuhogar.com</li>
+          <li><strong>Dirección:</strong> Calle Pintura 123, Madrid, España</li>
+          <li><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+        </ul>
+      </section>
+
+      <form class="contact-form" action="#" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject" placeholder="Motivo de tu mensaje" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <Footer />
+  </body>
+</html>
