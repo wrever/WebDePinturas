@@ -1,0 +1,11 @@
+---
+const { name, price, image, description } = Astro.props;
+---
+
+<div class="product-card">
+  <img src={image} alt={name} class="product-image" />
+  <h3>{name}</h3>
+  <p>{description}</p>
+  <span class="price">{price}</span>
+  <button class="cta-button">Reservar ahora</button>
+</div>
